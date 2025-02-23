@@ -1,0 +1,2 @@
+# Resumo
+O programa armazena o nome de um produto, seu preço, o desconto e o valor com desconto. Esses dados são manipulados por meio de ponteiros e, em seguida, o programa exibe as informações para o usuário.
