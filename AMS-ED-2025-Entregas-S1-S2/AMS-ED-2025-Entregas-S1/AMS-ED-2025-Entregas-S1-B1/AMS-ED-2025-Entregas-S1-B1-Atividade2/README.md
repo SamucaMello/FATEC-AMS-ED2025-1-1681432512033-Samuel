@@ -1,0 +1,2 @@
+# Resumo
+O programa armazena o nome de candidatos e as notas de quatro fases de avaliação (Prova Escrita, Análise Curricular, Prova Prática e Entrevista em Banca Avaliadora). As notas são manipuladas por meio de ponteiros e a nota final é calculada com base em uma fórmula específica, excluindo a maior e a menor nota de cada fase. Ao final, o programa classifica os candidatos com base na nota final e exibe os 5 melhores para o usuário.
