@@ -10,8 +10,9 @@
 #define maxCandi 50
 
 typedef struct modeloCandidato {
-    char nome[quantNomeCandi];
-    
+    char 
+	nome[quantNomeCandi];
+
     float 
         somaPE,
         somaAC,
@@ -70,8 +71,8 @@ void calcularNotaFinal(Candidato *c) {
 
 int compararNotaFinal(const void *a, const void *b) {
     Candidato 
-	    *candidatoA = (Candidato *)a,
-    	*candidatoB = (Candidato *)b;
+	  *candidatoA = (Candidato *)a,
+    	  *candidatoB = (Candidato *)b;
 
     float 
         NFcandiA = candidatoA->notaFinal,
@@ -90,33 +91,30 @@ int compararNotaFinal(const void *a, const void *b) {
 int main() {
     Candidato candidatos[maxCandi];
     int qtdCandidatos = 0;
-    char opc;
-
+   
+    
     while (qtdCandidatos < maxCandi) {
         Candidato* c = &candidatos[qtdCandidatos];
         
         printf("Digite o nome do candidato: ");
-        scanf("%s", c->nome );
-
+        scanf("%s", c->nome);
+	
         perguntarNota("PE", c->notaPE, quantPE, &c->somaPE);
-       perguntarNota("AC", c->notaAC, quantAC, &c->somaAC);
+        perguntarNota("AC", c->notaAC, quantAC, &c->somaAC);
         perguntarNota("PP", c->notaPP, quantPP, &c->somaPP); 
         perguntarNota("EB", c->notaEB, quantEB, &c->somaEB); 
-
-       
         calcularNotaFinal(c);
-
         qtdCandidatos++;
         
-        
-        do {
+	    char opc = '\0';
+	    while (opc != 's' && opc != 'n'){
             printf("Deseja cadastrar outro candidato? [s/n]: ");
             scanf(" %c", &opc);
             opc = tolower(opc);  
             if (opc != 's' && opc != 'n') {
                 printf("Opção inválida, escolha entre 's' ou 'n'.\n");
             }
-        } while (opc != 's' && opc != 'n');
+        } 
         
         if(opc == 'n') break;
     }
