@@ -106,8 +106,8 @@ int main() {
         calcularNotaFinal(c);
         qtdCandidatos++;
         
-	    char opc = '\0';
-	    while (opc != 's' && opc != 'n'){
+	char opc = '\0';
+	while (opc != 's' && opc != 'n'){
             printf("Deseja cadastrar outro candidato? [s/n]: ");
             scanf(" %c", &opc);
             opc = tolower(opc);  
@@ -115,7 +115,6 @@ int main() {
                 printf("Opção inválida, escolha entre 's' ou 'n'.\n");
             }
         } 
-        
         if(opc == 'n') break;
     }
 
