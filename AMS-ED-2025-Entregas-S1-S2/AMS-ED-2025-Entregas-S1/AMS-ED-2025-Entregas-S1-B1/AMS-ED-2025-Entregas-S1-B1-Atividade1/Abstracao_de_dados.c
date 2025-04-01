@@ -1,3 +1,12 @@
+/*----------------------------------------------------------------------------------*/
+/*   FATEC-São Caetano do Sul                 Estrutura de Dados                    */
+/*                         Id da Atividade: S1-B1-1                                 */
+/*             Objetivo: << Ponteiros >>                           		            */
+/*                                                                                  */
+/*                                  Autor: Samuel Mello de Campos e Silva           */
+/*                                                                  Data:23/02/2025 */
+/*----------------------------------------------------------------------------------*/
+
 #include <stdio.h>
 
 void aplicarDesc(float* preco, float* prodDesc, float* precoTotal){
