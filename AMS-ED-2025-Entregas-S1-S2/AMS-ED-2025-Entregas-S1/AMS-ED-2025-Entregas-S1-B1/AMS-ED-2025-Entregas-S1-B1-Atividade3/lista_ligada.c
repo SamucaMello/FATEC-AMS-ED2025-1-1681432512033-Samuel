@@ -1,3 +1,12 @@
+/*----------------------------------------------------------------------------------*/
+/*   FATEC-São Caetano do Sul                 Estrutura de Dados                    */
+/*                         Id da Atividade: S1-B1-3                                 */
+/*             Objetivo: << Lista ligada para restaurante >>                        */
+/*                                                                                  */
+/*                                  Autor: Samuel Mello de Campos e Silva           */
+/*                                                                  Data:25/03/2025 */
+/*----------------------------------------------------------------------------------*/
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
