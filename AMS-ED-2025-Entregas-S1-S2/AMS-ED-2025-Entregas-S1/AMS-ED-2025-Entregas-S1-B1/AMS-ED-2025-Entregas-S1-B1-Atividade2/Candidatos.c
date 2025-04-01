@@ -1,3 +1,12 @@
+/*----------------------------------------------------------------------------------*/
+/*   FATEC-São Caetano do Sul                 Estrutura de Dados                    */
+/*                         Id da Atividade: S1-B1-2                                 */
+/*             Objetivo: << Utilização de array >>       		            */
+/*                                                                                  */
+/*                                  Autor: Samuel Mello de Campos e Silva           */
+/*                                                                  Data:12/03/2025 */
+/*----------------------------------------------------------------------------------*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
