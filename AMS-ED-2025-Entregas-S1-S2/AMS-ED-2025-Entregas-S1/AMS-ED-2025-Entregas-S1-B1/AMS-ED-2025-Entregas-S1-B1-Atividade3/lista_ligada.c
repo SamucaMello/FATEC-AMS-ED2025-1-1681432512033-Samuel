@@ -148,20 +148,20 @@ int main() {
             
         case 1:
             printf("Coloque o nome Cliente: ");
-            scanf(" %31[^\n]", molde -> nomeCliente);
+            scanf(" %31[^\n]", molde->nomeCliente);
             printf("Coloque uma descrição breve do pedido: ");
-            scanf(" %31[^\n]", molde -> descPrato);
+            scanf(" %31[^\n]", molde->descPrato);
 
             printf("Coloque o status do pedido (pendente, em preparo, pronto, entregue): ");
-            scanf(" %19[^\n]", molde -> status);
+            scanf(" %19[^\n]", molde->status);
 
             printf("Coloque o id do pedido: ");
-            scanf("%d", & molde -> idPedido);
+            scanf("%d", & molde->idPedido);
 
             printf("Coloque a quantidade do pedido: ");
-            scanf("%d", & molde -> quant);
+            scanf("%d", & molde->quant);
 
-            adicionarPedido( & inicio, molde -> nomeCliente, molde -> descPrato, molde -> status, molde -> quant, molde -> idPedido);
+            adicionarPedido(&inicio, molde->nomeCliente, molde->descPrato, molde->status, molde->quant, molde->idPedido);
             break;
 
         case 2:
